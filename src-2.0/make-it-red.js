@@ -89,5 +89,6 @@ MakeItRed = {
 		
 		// Retrieve a global pref
 		this.log(`Intensity is ${Zotero.Prefs.get('extensions.make-it-red.intensity', true)}`);
+		this.log(`Color is ${Zotero.Prefs.get('extensions.make-it-red.color', "#ff0000")}`);
 	},
 };
