@@ -1,7 +1,7 @@
 .row {
-	color: red;
+	color: var(--make-it-red-style-color, red) !important;
 }
 
 window[data-green-instead] .row {
-	color: green;
+	color: var(--make-it-green-style-color, green) !important;
 }

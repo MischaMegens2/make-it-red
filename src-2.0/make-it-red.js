@@ -27,6 +27,8 @@ MakeItRed = {
 		link1.rel = 'stylesheet';
 		link1.href = this.rootURI + 'style.css';
 		doc.documentElement.appendChild(link1);
+		let color = Zotero.Prefs.get("extensions.make-it-red.color", "#ff0000");
+		doc.documentElement.style.setProperty('--make-it-red-style-color', color);
 		this.storeAddedElement(link1);
 		
 		// Use Fluent for localization
